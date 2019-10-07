@@ -2,7 +2,7 @@
 var user = prompt(" Can You Please Tell Us Your Name ")
  alert("Welcome You Here " + user + " I wish You Enjoy Knowing Me..")
 
-var name = prompt('Do you know who am I? ' );
+var name = prompt('Do you know who I\'m ? ' );
 name = name.toLowerCase();
 
 if (name =='yes') {
@@ -13,7 +13,7 @@ if (name =='yes') {
     // console.log ("Sure you know me");
 
 } else {
-    alert('Check your memory again');
+    alert('Check your memory again!');
     // console.log ("Check your memory again");
 
 }
@@ -31,7 +31,7 @@ alert('Maybe you know me from university');
 
         break;
     default:
-        alert('not proplem ');  
+        alert('not proplem :) ');  
         // console.log ("not proplem");
 
     }
