@@ -6,10 +6,10 @@ var name = prompt('Do you know who I\'m ? ' );
 name = name.toLowerCase();
 
 if (name =='yes') {
-   alert('Sure you know me ');
+   alert('Sure you are  know me ');
    // console.log ("Sure you know me");
 } else if (name =='y') {
-    alert('Sure you know me ');
+    alert('Sure you are know me ');
     // console.log ("Sure you know me");
 
 } else {
@@ -21,7 +21,7 @@ var studied = prompt('Do you know what I studied at university? ' );
 studied = studied.toLowerCase();
 switch(studied) {
     case 'yes':
-alert('Maybe you know me from university');  
+alert('Maybe you know me from university ');  
 // console.log ("Maybe you know me from university");
 
     break;
@@ -35,19 +35,19 @@ alert('Maybe you know me from university');
         // console.log ("not proplem");
 
     }
-    var industrial  = prompt(' Do you know what industrial engineering is? ' );
+    var industrial  = prompt(' Do you know what\'s it industrial engineering ? ' );
 industrial =industrial.toLowerCase();
 
 if (industrial =='yes') {
-    alert('You know it\'s a great specialty ');
-    // console.log ("'You know it\'s a great specialty ");
+    alert('wonderful  ');
+    // console.log ("'wonderful ");
 
 } else if (name =='y') {
-    alert('You know it\'s a great specialty ');
-    // console.log ("You know it\'s a great specialty ");
+    alert('wonderful ');
+    // console.log ("wonderful ");
 } else {
-    alert('So Read my page');
-    // console.log ("So Read my page ");
+    alert('So Read my page !!');
+    // console.log ("So Read my page!! ");
 }
 var like  = prompt(' Do you know what I like? ' );
 like =like.toLowerCase();
@@ -65,7 +65,7 @@ if (like =='yes') {
    //  console.log ("never mind ");
 }
 
-var questions = prompt('Were the questions annoying? ' );
+var questions = prompt('Were\'s the questions annoying? ' );
 questions =questions.toLowerCase();
 
 if (questions =='yes') {
@@ -75,8 +75,8 @@ if (questions =='yes') {
     alert('I\'m sorry for that') ;
     // console.log ("I\'m sorry for that ");
 } else {
-    alert(' thanks for your kindness');
-  //  console.log (" thanks for your kindness ");
+    alert(' thanks, for your kindness');
+  //  console.log (" thanks, for your kindness ");
 }
 
 alert("Thanks for being here " + user);
