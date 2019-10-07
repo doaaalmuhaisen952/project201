@@ -2,7 +2,7 @@
 var user = prompt(" Can You Please Tell Us Your Name ")
  alert("Welcome You Here " + user + " I wish You Enjoy Knowing Me..")
 
-var name = prompt('did you know who am I? ' );
+var name = prompt('Do you know who am I? ' );
 name = name.toLowerCase();
 
 if (name =='yes') {
