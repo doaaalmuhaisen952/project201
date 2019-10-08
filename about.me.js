@@ -1,82 +1,106 @@
 'use strict';
 var user = prompt(" Can You Please Tell Us Your Name ")
- alert("Welcome You Here " + user + " I wish You Enjoy Knowing Me..")
 
-var name = prompt('Do you know who I\'m ? ' );
-name = name.toLowerCase();
+alert("Welcome You Here " + user + " I wish You Enjoy Knowing Me..")
+var counter =0;
 
-if (name =='yes') {
-   alert('Sure you are  know me ');
-   // console.log ("Sure you know me");
-} else if (name =='y') {
-    alert('Sure you are know me ');
-    // console.log ("Sure you know me");
+var questions = [
+    [
+        'did you know who am I?',
+        'Sure you know me ',
+        'Check your memory again',
+    ],
+    [
+        'Do you know what I studied at university? ',
+        'Maybe you know me from university',
+        'not proplem',
+    ],
+    [
+        ' Do you know what industrial engineering is? ',
+        'You know it\'s a great specialty ',
+        'So Read my page',
+    ],
+    [
+        ' Do you know what I like? ',
+        'Nice! ',
+        'never mind',
+    ],
+    [
+        'Were the questions annoying? ' ,
+        'I\'m sorry for that',
+        ' thanks for your kindness',' thanks for your kindness'
+    ]
+]
 
-} else {
-    alert('Check your memory again!');
-    // console.log ("Check your memory again");
-
-}
-var studied = prompt('Do you know what I studied at university? ' );
-studied = studied.toLowerCase();
-switch(studied) {
-    case 'yes':
-alert('Maybe you know me from university ');  
-// console.log ("Maybe you know me from university");
-
+for (var i=0; i<5; i++){
+    var exactArray = questions[i];
+    var promptQuestion = exactArray[0];
+    var posetiveReply = exactArray[1];
+    var negativeReply = exactArray[2];
+    var name = prompt(promptQuestion);
+    promptQuestion = promptQuestion.toLowerCase();
+    switch (name) {
+    case "yes":
+    case "y":
+    alert(posetiveReply);
+    console.log(name)
+counter=counter+1
     break;
-    case 'y':
-        alert('Maybe you know me from university');  
-       // console.log ("Maybe you know me from university");
 
+    
+    
+    case "no":
+    case "n":
+    alert(negativeReply);
+    console.log(name)
+    break;
+    
+    default :
+    alert ('try a gain') ;
+    break;
+    }}
+    
+for (var family= 0; family <4; family++){
+  var family = prompt("Guess How many members of my family ?.... You have 4 trials")
+    if (family ==8){
+        alert("Yes exactly!");
+        counter=counter+1;
+        console.log(family)
+        break;
+
+    } else if (family >8) {
+        alert ("too high");
+        console.log(family)
+    } else if ( family< 8){
+        alert(" too low");
+        console.log(family)
+    }}
+    alert ("My family is 8 ")
+
+
+    var sits = ["lebnan", 'Venice', 'France', 'Turkey', 'Amazon Forest', 'Chaina']
+ for(var count=0;count<5 ; count++) {
+    var place = prompt("I wish visiting 6 place in the world .. Can you guess one of them?");
+    switch (place){
+       case sits[0]:
+       case sits[1]:
+       case sits[2]:
+       case sits[3]:
+       case sits[4]:
+       case sits[5] :
+        alert(" You are right.. My fav place lebnan, Venice, France , Turkey , Amazon forest, Chaina ");
+        counter = counter + 1;
+        console.log(place);
+    count = 5;
         break;
     default:
-        alert('not proplem :) ');  
-        // console.log ("not proplem");
-
-    }
-    var industrial  = prompt(' Do you know what\'s it industrial engineering ? ' );
-industrial =industrial.toLowerCase();
-
-if (industrial =='yes') {
-    alert('wonderful  ');
-    // console.log ("'wonderful ");
-
-} else if (name =='y') {
-    alert('wonderful ');
-    // console.log ("wonderful ");
-} else {
-    alert('So Read my page !!');
-    // console.log ("So Read my page!! ");
-}
-var like  = prompt(' Do you know what I like? ' );
-like =like.toLowerCase();
-
-if (like =='yes') {
-    alert('Nice! ');
-    // console.log ("Nice! ");
-}
+        alert("You are wrong .. Try it again ")
     
- else if (like =='y') {
-    alert('Nice! ');
-   //  console.log ("Nice! ");
-} else {
-    alert('never mind');
-   //  console.log ("never mind ");
-}
+        console.log(place);
+        break;
 
-var questions = prompt('Were\'s the questions annoying? ' );
-questions =questions.toLowerCase();
+ }
+ alert(" You are right.. My fav place lebnan, Venice, France , Turkey , Amazon forest, Chaina ");
 
-if (questions =='yes') {
-    alert('I\'m sorry for that') ;
-  //  console.log ("I\'m sorry for that ");
-} else if (questions =='y') {
-    alert('I\'m sorry for that') ;
-    // console.log ("I\'m sorry for that ");
-} else {
-    alert(' thanks, for your kindness');
-  //  console.log (" thanks, for your kindness ");
-}
-
-alert("Thanks for being here " + user);
+ alert( "thanks "  + counter + " this is your mark ");
+ 
