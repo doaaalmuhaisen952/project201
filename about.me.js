@@ -46,9 +46,6 @@ for (var i=0; i<5; i++){
     console.log(name)
 counter=counter+1
     break;
-
-    
-    
     case "no":
     case "n":
     alert(negativeReply);
@@ -94,13 +91,12 @@ for (var family= 0; family <4; family++){
     count = 5;
         break;
     default:
-        alert("You are wrong .. Try it again ")
+        alert("You are wrong .. Try it again ");
     
         console.log(place);
         break;
 
- }
- alert(" You are right.. My fav place lebnan, Venice, France , Turkey , Amazon forest, Chaina ");
-
- alert( "thanks "  + counter + " this is your mark ");
+ }}
+ alert(" Opss  My fav place lebnan, Venice, France , Turkey , Amazon forest, Chaina ");
+ alert( "thank you ,you gave me your timeto to answer my questions  "  + counter + " this is your mark ");
  
