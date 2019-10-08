@@ -100,7 +100,7 @@ for (var family= 0; family <4; family++){
         break;
 
  }
- alert(" You are right.. My fav place lebnan, Venice, France , Turkey , Amazon forest, Chaina ");
+ alert(" Opss  My fav place lebnan, Venice, France , Turkey , Amazon forest, Chaina ");
+ alert( "thank you ,you gave me your timeto to answer my questions  "  + counter + " this is your mark ");
 
- alert( "thanks "  + counter + " this is your mark ");
- 
+ }
