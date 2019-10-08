@@ -99,4 +99,3 @@ for (var family= 0; family <4; family++){
  }}
  alert(" Opss  My fav place lebnan, Venice, France , Turkey , Amazon forest, Chaina ");
  alert( "thank you ,you gave me your timeto to answer my questions  "  + counter + " this is your mark ");
- 
