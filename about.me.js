@@ -1,5 +1,6 @@
 'use strict';
 var user = prompt(" Can You Please Tell Us Your Name ")
+
 alert("Welcome You Here " + user + " I wish You Enjoy Knowing Me..")
 var counter =0;
 
@@ -45,6 +46,7 @@ for (var i=0; i<5; i++){
     console.log(name)
 counter=counter+1
     break;
+
     
     
     case "no":
@@ -59,13 +61,13 @@ counter=counter+1
     }}
     
 for (var family= 0; family <4; family++){
-
-    var family = prompt("Guess How many members of my family ?.... You have 4 trials")
+  var family = prompt("Guess How many members of my family ?.... You have 4 trials")
     if (family ==8){
         alert("Yes exactly!");
         counter=counter+1;
         console.log(family)
         break;
+
     } else if (family >8) {
         alert ("too high");
         console.log(family)
@@ -96,7 +98,7 @@ for (var family= 0; family <4; family++){
     
         console.log(place);
         break;
-}
+
  }
  alert(" You are right.. My fav place lebnan, Venice, France , Turkey , Amazon forest, Chaina ");
 
