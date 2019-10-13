@@ -1,63 +1,8 @@
-// 'use strict';
-// var user = prompt(" Can You Please Tell Us Your Name ")
+ 'use strict';
+ var user = prompt(" Can You Please Tell Us Your Name ")
 
-// alert("Welcome You Here " + user + " I wish You Enjoy Knowing Me..")
-// var counter = 0;
-
-// var questions = [
-//     [
-//         'did you know who am I?',
-//         'Sure you know me ',
-//         'Check your memory again',
-//     ],
-//     [
-//         'Do you know what I studied at university? ',
-//         'Maybe you know me from university',
-//         'not proplem',
-//     ],
-//     [
-//         ' Do you know what industrial engineering is? ',
-//         'You know it\'s a great specialty ',
-//         'So Read my page',
-//     ],
-//     [
-//         ' Do you know what I like? ',
-//         'Nice! ',
-//         'never mind',
-//     ],
-//     [
-//         'Were the questions annoying? ',
-//         'I\'m sorry for that',
-//         ' thanks for your kindness', ' thanks for your kindness'
-//     ]
-// ]
-
-// for (var i = 0; i < 5; i++) {
-//     var exactArray = questions[i];
-//     var promptQuestion = exactArray[0];
-//     var posetiveReply = exactArray[1];
-//     var negativeReply = exactArray[2];
-//     var name = prompt(promptQuestion);
-//     promptQuestion = promptQuestion.toLowerCase();
-//     switch (name) {
-//         case "yes":
-//         case "y":
-//             alert(posetiveReply);
-//             console.log(name)
-//             counter = counter + 1
-//             break;
-//         case "no":
-//         case "n":
-//             alert(negativeReply);
-//             console.log(name)
-//             break;
-
-//         default:
-//             alert('try a gain');
-//             break;
-//     }
-// }
-
+ alert("Welcome You Here " + user + " I wish You Enjoy Knowing Me..")
+ var counter = 0;
 
 ////////////   first part that I change
 
@@ -67,8 +12,8 @@ function userEntry(ask, yes, no) {
     response = response.toUpperCase();
     if (response == 'YES' || response == 'Y') {
         alert(yes);
-        var mark = 0
-        mark = mark + 1;
+        
+        counter = counter + 1;
     } else if (response == 'NO' || response == 'N') {
         alert(no);
 
@@ -76,38 +21,36 @@ function userEntry(ask, yes, no) {
 }
     userEntry('did you know who am I?', 'Sure you know me ', 'Check your memory again')
     userEntry('Do you know what I studied at university? ', 'Maybe you know me from university', 'not proplem')
-    userEntry(' Do you know what industrial engineering is? ', 'You know it\'s a great specialty ', 'So Read my page')
+    userEntry(' Do you know what industrial engineering is? ', 'greet !', 'So Read my page')
     userEntry(' Do you know what I like? ', 'Nice! ', 'never mind')
     userEntry('Were the questions annoying? ', 'I\'m sorry for that', ' thanks for your kindness', ' thanks for your kindness')
   
 
-function doaa() {
 
-    for (var family = 0; family < 4; family++) {
+function doaa() {
+    for (var num = 0; num < 4; num++) {
         var family = prompt("Guess How many members of my family ?.... You have 4 trials")
-        if (family == 8) {
+        if (family == 5) {
             alert("Yes exactly!");
             counter = counter + 1;
-            console.log(family)
+            console.log(family);
             break;
-
-        } else if (family > 8) {
-            alert("too high");
-            console.log(family)
-        } else if (family < 8) {
+        } else if (family > 5) {
+            alert("too high !!");
+            console.log(family);
+        } else if (family < 5) {
             alert(" too low");
-            console.log(family)
+            console.log(family);
         }
     }
-    alert("My family is 8 ")
-    return (family);
-}
-doaa();
+ }
+ doaa();
+ alert("My family is 8 ")
 
 
 function cities() {
 
-    var sits = ["lebnan", 'Venice', 'France', 'Turkey', 'Amazon Forest', 'Chaina']
+    var sits = ["lebnan", 'Venice', 'France', 'Turkey', 'Amazon Forest', 'Jaban']
     for (var count = 0; count < 5; count++) {
         var place = prompt("I wish visiting 6 place in the world .. Can you guess one of them?");
         switch (place) {
@@ -132,7 +75,7 @@ function cities() {
         }
     }
     alert(" Opss  My fav place lebnan, Venice, France , Turkey , Amazon forest, Chaina ");
-    alert("thank you ,you gave me your timeto to answer my questions  " + counter + " this is your mark ");
+    alert("thank you "+ user +  " you gave me your timeto to answer my questions  " + counter + " this is your mark ");
     return(sits);
 }
 
